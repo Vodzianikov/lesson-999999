@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/ava7patterns_pattern_1301.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 21% 21%;
+    color: white;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h1,
+.h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.wrapper{
+    max-width: 850px;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(29, 29, 29, 0.5);
+    /* overflow: auto; */
+}
+
+.wrapper h1{
+    /* margin-bottom: 35px; */
+    margin: 0 0 35px 0;
+}
+
+.wrapper p{
+    text-align: left;
+    margin: 0 0 35px 0;
+}
+
+.wrapper img{
+    width: 30%;
+    margin: 0 0 35px 0;
+}
+
+.imgParalax{
+    width: 100%;
+    height: 25vh;
+    background-image: url("https://api.lorem.space/image/car?w=1000&h=640&hash=lh5z0qqv");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-attachment: fixed; */
+    background-position: center bottom;
+    transition: 0.6s;
+}
+
+.imgParalax:hover{
+    background-size: 200%;
+}
+
+.btnPress{
+    height: 25vh;
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    margin-left: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    text-shadow: 0 -5px 0 red;
+    box-shadow: 0 20px 0 green;
+    border-radius: 20% 0 20% 0;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    text-shadow: 0 0 0 red;
+    box-shadow: 0 10px 0 green;
+    top: 10px;
+    border-radius: 0 20% 0 20%;
+}
+
+.btn:focus,
+.btn:active{
+    text-shadow: 0 5px 0 red;
+    box-shadow: 0 0 0 green;
+    top: 20px;
+}
